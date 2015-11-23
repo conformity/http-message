@@ -2,6 +2,7 @@
 
 namespace Conformity\Http\Message;
 
+use Conformity\Http\Message\Response\Cookie\CookieTrait;
 use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
@@ -15,7 +16,7 @@ use Psr\Http\Message\StreamInterface;
  */
 class Response implements ResponseInterface
 {
-    use MessageTrait;
+    use MessageTrait, CookieTrait;
 
     /**
      * Map of standard HTTP status code/reason phrases

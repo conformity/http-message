@@ -7,7 +7,7 @@ use Conformity\Http\Message\RelativeStream;
 use Conformity\Http\Message\Stream;
 
 /**
- * @covers \Zend\Diactoros\RelativeStream
+ * @covers \Conformity\Http\Message\RelativeStream
  */
 class RelativeStreamTest extends TestCase
 {
