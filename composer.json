@@ -1,0 +1,32 @@
+{
+  "name": "conformity/http-message",
+  "description": "A PSR7 Compliant http-message implementation",
+  "license": "MIT",
+  "keywords": [
+    "http",
+    "psr",
+    "psr-7"
+  ],
+  "homepage": "https://github.com/conformity/http-message",
+  "require": {
+    "php": ">=5.4",
+    "psr/http-message": "~1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*",
+    "fabpot/php-cs-fixer": "~1.10"
+  },
+  "provide": {
+    "psr/http-message-implementation": "~1.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Conformity\\Http\\Message\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Conformity\\Http\\Message\\Test\\": "tests"
+    }
+  }
+}
